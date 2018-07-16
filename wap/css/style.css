@@ -1,0 +1,388 @@
+.header {
+    width: 100%;
+    height: 1rem;
+    padding: 0 .3rem;
+    background-color: #fff;
+}
+
+.header .imgl {
+    width: 1.8rem;
+    height: .5rem;
+    margin-top: .25rem;
+}
+
+.header .imgr {
+    width: 2.4rem;
+    height: .35rem;
+    margin-top: .325rem;
+}
+
+.bannerbox {
+    width: 100%;
+}
+.bannerbox a{
+    display: block;
+    width: 100%;
+}
+
+.spbox {
+    width: 100%;
+    height: 5.7rem;
+    background: url('../img/sp.jpg') no-repeat;
+    background-size: 100% 100%;
+    padding: 1rem .38rem 0;
+}
+
+.spbox .videoBoxList {
+    width: 100%;
+    height: 4.7rem;
+    position: relative;
+}
+
+.spbox .fenm {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 4.7rem;
+    width: 100%;
+}
+
+.gcbox {
+    width: 100%;
+    height: 8.12rem;
+    background: url('../img/360bj.jpg') no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.gcbox .gc-pz {
+     /* width: 5.1rem; */
+   /* height: 2.15rem; */
+    /* background: url('../img/peizhi.png') no-repeat;
+    background-size: 100% 100%; */
+    /* position: absolute;
+    top: 0.7rem;
+    left: 0.4rem; */
+    /* color: #FFFFFF;*/
+    font-size: 0.25rem; 
+}
+
+.gcbox .gc-pz .gc-txt p{
+    text-align:center;
+    opacity: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    color:#A42122;
+    font-weight: bold;
+    letter-spacing: .2em;
+    box-sizing: border-box;
+    position: absolute;
+}
+.gcbox .gc-pz .gc-txt p span{
+    color:#FFFFFF;
+    font-size: 0.35rem;
+    font-weight: normal;
+}
+.gcbox .gc-pz .gc-txt .p1{
+    background: url('../img/pz.png') no-repeat;
+    background-size: 100% 100%;
+    top: .6rem;
+    left: 3.5rem;
+}
+.gcbox .gc-pz .gc-txt .p2{
+    top: 1.3rem;
+    left: 2rem;
+    background: url('../img/pz.png') no-repeat;
+    background-size: 100% 100%;
+}
+.gcbox .gc-pz .gc-txt .p3{
+    top: 2rem;
+    left: .5rem;
+    background: url('../img/pz.png') no-repeat;
+    background-size: 100% 100%;
+}
+.pd {
+    will-change: transform;
+    animation: am 0.7s linear forwards;
+    -moz-animation: am 0.7s linear forwards;
+    /* Firefox */
+    -webkit-animation: am 0.7s linear forwards;
+    /* Safari 和 Chrome */
+    -o-animation: am 0.7s linear forwards;
+}
+.pdh {
+    will-change: transform;
+    animation: am 0.7s linear forwards;
+    -moz-animation: am 0.7s linear forwards;
+    /* Firefox */
+    -webkit-animation: am 0.7s linear forwards;
+    /* Safari 和 Chrome */
+    -o-animation: am 0.7s linear forwards;
+    animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+    -o-animation-delay: 0.5s;
+}
+.pdx {
+    will-change: transform;
+    animation: am 0.7s linear forwards;
+    -moz-animation: am 0.7s linear forwards;
+    /* Firefox */
+    -webkit-animation: am 0.7s linear forwards;
+    /* Safari 和 Chrome */
+    -o-animation: am 0.7s linear forwards;
+    animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    -o-animation-delay: 1s;
+}
+@keyframes am {
+    form {
+        opacity: 0;
+        width: 0%;
+
+    }
+    to {
+        opacity: 1;
+        width: 40%;
+    }
+}
+
+ @-moz-keyframes am
+
+    {
+        form {
+
+            opacity: 0;
+            width: 0%;
+    
+        }
+        to {
+            opacity: 1;
+
+            width: 40%;
+        }
+}
+
+@-webkit-keyframes am
+
+    {
+        form {
+
+            opacity: 0;
+            width: 0%;
+    
+        }
+        to {
+            opacity: 1;
+
+            width: 40%;
+        }
+}
+
+@-o-keyframes am
+
+    {
+        form {
+
+            opacity: 0;
+            width: 0%;
+    
+        }
+        to {
+            opacity: 1;
+            width: 40%;
+        }
+} 
+.gcbox .gc-button {
+    position: absolute;
+    width: 2.5rem;
+    height: 1rem;
+    background: url('../img/button.png') no-repeat;
+    background-size: 100% 100%;
+    font-size: .3rem;
+    color: #FFFFFF;
+    line-height: 1rem;
+    display: block;
+    text-align: center;
+    bottom: 1rem;
+    letter-spacing: 2px;
+    padding-top: 0.1rem;
+    margin-left: -1.25rem;
+    left: 50%;
+}
+
+.maidbox {
+    width: 100%;
+    position: relative;
+}
+
+.maidbox .swiper-container,
+.maidbox .swiper-container .swiper-wrapper,
+.maidbox .swiper-container .swiper-wrapper .swiper-slide {
+    width: 100%;
+}
+
+.maidbox .pag {
+    position: absolute;
+    left: 50%;
+    margin-left: -.72rem;
+    bottom: -.5rem;
+}
+
+.maidbox .pag .swiper-pagination-bullet {
+    background: #e6e6e6 !important;
+    margin: 0 .1rem;
+    opacity: 1;
+}
+
+.maidbox .pag .swiper-pagination-bullet-active {
+    background: #942218 !important;
+}
+
+.maidbox .swiper-container .swiper-wrapper .swiper-slide {
+    position: relative;
+}
+
+.maidbox .swiper-container .swiper-wrapper .swiper-slide .slide-txt {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: .8rem;
+    background: rgba(0, 0, 0, 0.9);
+    color: #FFFFFF;
+    font-size: .3rem;
+    padding: .2rem;
+}
+
+.txt-p {
+    opacity: 0;
+    letter-spacing: -2em;
+}
+
+.txt-dh {
+    will-change: transform;
+    animation: txt 0.5s linear forwards;
+    -moz-animation: txt 0.5s linear forwards;
+    /* Firefox */
+    -webkit-animation: txt 0.5s linear forwards;
+    /* Safari 和 Chrome */
+    -o-animation: txt 0.5s linear forwards;
+}
+
+@keyframes txt {
+    form {
+        letter-spacing: -2em;
+        opacity: 0;
+
+    }
+    to {
+        opacity: 1;
+        letter-spacing: 0em;
+    }
+}
+
+ @-moz-keyframes txt
+
+    {
+        form {
+            letter-spacing: -2em;
+            opacity: 0;
+    
+        }
+        to {
+            opacity: 1;
+            letter-spacing: 0em;
+        }
+}
+
+@-webkit-keyframes txt
+
+    {
+        form {
+            letter-spacing: -2em;
+            opacity: 0;
+    
+        }
+        to {
+            opacity: 1;
+            letter-spacing: 0em;
+        }
+}
+
+@-o-keyframes txt
+
+    {
+        form {
+            letter-spacing: -2em;
+            opacity: 0;
+    
+        }
+        to {
+            opacity: 1;
+            letter-spacing: 0em;
+        }
+} 
+
+.dcbox {
+    width: 100%;
+    height: 16.58rem;
+    background: url('../img/dcbj.jpg') no-repeat;
+    background-size: 100% 100%;
+    color: #FFFFFF;
+    font-size: .3rem;
+    text-align: center;
+    padding-top: 9rem;
+}
+
+.dcbox>p {
+    margin-bottom: .1rem;
+}
+
+.dcbox .ck-button {
+    width: 2.5rem;
+    height: 1rem;
+    background: url('../img/button.png') no-repeat;
+    background-size: 100% 100%;
+    font-size: .3rem;
+    color: #FFFFFF;
+    line-height: 1rem;
+    display: block;
+    text-align: center;
+    letter-spacing: 2px;
+    padding-top: 0.1rem;
+    margin: 0.1rem auto 0;
+}
+
+.dcbox .smbox {
+    width: 2rem;
+    height: 2rem;
+    margin: .2rem auto 1.5rem;
+    font-size: .25rem
+}
+
+.footer {
+    text-align: center;
+    font-size: .2rem;
+    height: 1.14rem;
+    line-height: 1.14rem;
+    color: #FFFFFF;
+}
+.back{
+    width: .6rem;
+    height: .6rem;
+    position: fixed;
+    bottom: 5rem;
+    right: .3rem;
+    z-index: 9999;
+    display: none;
+}
+.youkuplayerr{
+    width: 100% !important;
+    height: 4.7rem !important;
+}
+#youkuplayer{
+    width: 100% !important;
+    height: 4.7rem !important;
+}

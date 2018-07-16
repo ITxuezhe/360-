@@ -1,0 +1,615 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td,
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100px;
+    width: 100%;
+    height: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    font-family: "Microsoft YaHei", SimHei, helvetica, arial, verdana, tahoma, sans-serif;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: .26rem;
+    visibility: hidden;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    border: 0;
+}
+
+em,
+i,
+b,
+strong {
+    font-style: normal;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+html,
+body {
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/* @media all and (orientation: portrait) { */
+
+.mainbox {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url("../images/beijing.jpg") no-repeat;
+    background-size: 100% 100%;
+    padding: 0 0.24rem;
+}
+
+.mainbox .headerbox {
+    width: 100%;
+    padding-top: .62rem;
+}
+
+.mainbox .headerbox .imgl {
+    width: 1.79rem;
+    height: .47rem;
+    float: left;
+}
+
+.mainbox .headerbox .imgr {
+    width: 2.78rem;
+    height: .55rem;
+    float: right;
+    padding-top: .16rem;
+}
+
+.mainbox .headerbox img {
+    width: 100%;
+    height: 100%;
+    border: 0; 
+ } 
+
+/* .loading {
+    font-size: 2rem;
+    color:#ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+} */
+
+.mainbox #main {
+    width: 100%;
+    position: relative;
+    top: 25%;
+}
+
+.mainbox #main .content {
+    width: 100%;
+}
+
+.mainbox #main .content .pa {
+    width: 1.7rem;
+    height: 1.3rem;
+    background: url("../images/loader.gif") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -0.8rem;
+    z-index: 999;
+    text-align: center;
+    line-height: 1.3rem;
+    color: #ffffff;
+    font-size: 0.15rem;
+    opacity: 0.7;
+}
+
+.mainbox #main .transfer {
+    width: 100%;
+}
+
+.mainbox #main .transfer img {
+    width: 100%;
+    height: 100%;
+}
+
+.mainbox #main #img1 {
+    width: 100%;
+    height: 100%;
+}
+
+.mainbox #main .henghostpot {
+    display: none;
+}
+
+.mainbox #main .shuhostpot {
+    display: block;
+}
+
+.mainbox #main .jh .on {
+    opacity: 0;
+}
+
+.mainbox .xs {
+    display: none;
+}
+
+.mainbox .paletteBox {
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    bottom: 2rem;
+}
+.mainbox .paletteBox p{
+    font-size: .28rem;
+    margin-bottom: .4rem;
+}
+.mainbox .paletteBox .palette {
+    width: 100%;
+    box-sizing: border-box;
+}
+.mainbox .paletteBox .palette
+.mainbox .paletteBox .palette .swiper-container .swiper-wrapper{
+    width: 100%;
+    margin-right: 1rem;
+}
+.mainbox .paletteBox .palette .swiper-container .swiper-wrapper .swiper-slide{
+    width: .52rem;
+    height: .46rem;
+}
+
+.mainbox .paletteBox .palette .swiper-container .swiper-wrapper .swiper-slide img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.imgborder{
+    border: 1px solid red;
+    border-radius: .1rem;
+}
+#showHj1,
+#showHj2 {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: none;
+}
+
+#showHj1 div,
+#showHj2 div {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 0.5rem;
+    font-size: 0.5rem;
+    float: right;
+}
+
+.headStock {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+.headStock .hs-container {
+    width: 7.02rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.headStock p {
+    color: white;
+    font-size: 0.3rem;
+    text-align: center;
+    margin-bottom: 0.1rem;
+}
+
+.headStock .hs-banner {
+    width: 100%;
+    position: relative;
+}
+
+.headStock .hs-banner .swiper-container {
+    width: 100%;
+    height: 7.02rem;
+}
+
+.headStock .hs-banner .swiper-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.headStock .hs-banner .hs-msg {
+    background: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    line-height: 0.35rem;
+    position: absolute;
+    bottom: 0;
+    padding: 0.22rem 0.6rem 0.32rem 0.15rem;
+    z-index: 9999;
+}
+
+#initialize {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+#initialize div {
+    width: 1.44rem;
+    height: 0.46rem;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -0.23rem 0 0 -0.72rem;
+}
+
+#initialize div img {
+    width: 100%;
+    height: 100%;
+}
+
+#initialize div p {
+    width: 2.44rem;
+    color: #ffffff;
+    font-size: 0.24rem;
+    margin-top: 0.3rem;
+    margin-left: -0.5rem;
+}
+.footer{
+    width: 100%;
+    position: absolute;
+    bottom: .36rem;
+    font-size: .2rem;
+    color: #ffffff;
+}
+.footer .xg{
+    width: 0.1rem;
+    height: 0.1rem;
+    margin-bottom: .05rem;
+}
+/* } */
+
+/* @media all and (orientation: landscape) {
+
+    .mainbox {
+        width: 100%;
+        height: 100%;
+        background: url("../images/hbj.png") no-repeat;
+        background-size: 100% 100%;
+        padding: 0 0.2rem;
+    }
+
+
+    .mainbox #main {
+        width: 5rem;
+        position: relative;
+        margin: 0 auto;
+        top: 50%;
+        margin-top: -2rem;
+    }
+
+    .mainbox #main .transfer {
+        width: 100%;
+    }
+
+    .mainbox #main .transfer img {
+        width: 100%;
+    }
+
+    .mainbox #main #img1 {
+        width: 100%;
+        height: 100%;
+    }
+
+    body #main .shuhostpot {
+        display: none;
+    }
+
+    body #main .henghostpot {
+        display: block;
+    }
+
+    body #main .pa {
+        width: 1.7rem;
+        height: 1.3rem;
+        background: url("../images/loader.gif") no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        left: 30%;
+        z-index: 99999;
+        text-align: center;
+        font-size: 0.15rem;
+        line-height: 1.3rem;
+        color: #ffffff;
+        opacity: 0.7;
+        margin-top: 0.5rem;
+    }
+
+    body .paletteBox {
+        width: 100%;
+        display: flex;
+        position: absolute;
+        bottom: 0.2rem;
+    }
+
+    body .paletteBox .xs {
+        display: none;
+    }
+
+    body .paletteBox #content {
+        margin-right: 0.1rem;
+        position:absolute;
+    }
+
+    body .paletteBox #content div {
+        float: left;
+        text-align: center;
+        margin-right: 0.25rem;
+    }
+  .vr22{
+    margin-right:0rem!important;
+  }
+  .vr33{
+    margin-left:4.5rem!important;
+  }
+    body .paletteBox #content div img {
+        width: 0.4rem;
+        height: 0.4rem;
+    }
+
+    body .paletteBox #content div em {
+        margin-top: 0.04rem;
+        display: block;
+        font-size: 0.14rem;
+        color: #333333;
+    }
+
+    body .paletteBox .palette {
+        width: 4.2rem;
+        height: 0.42rem;
+
+        position: relative;
+        margin-top: 0.15rem;
+        margin-left:1.2rem;
+    }
+
+    body .paletteBox .palette ul {
+        position: absolute;
+        top: 0.07rem;
+        left: 50%;
+        margin-left:-1.5rem;
+    }
+
+    body .paletteBox .palette ul li {
+        float: left;
+        text-align: center;
+        font-size: .1rem;
+        width: 0.5rem;
+        margin-left:0.05rem;
+    }
+     body .paletteBox .palette ul li:nth-child(1){
+        margin-left:0;
+     }
+
+    body .paletteBox .palette ul li em {
+        width: 0.5rem;
+        height: .18rem;
+        display: block;
+        margin: 0 auto;
+    }
+
+    body .paletteBox .palette ul li em img:nth-child(2) {
+        display: none;
+    }
+
+    body .paletteBox .palette ul li em img {
+        width: 100%;
+        height: 100%;
+    }
+
+    body .paletteBox .palette ul li a {
+        display: block;
+        margin-top: 0.08rem;
+    }
+
+    body .paletteBox .palette ul li span {
+        display: none;
+        position: absolute;
+    }
+
+    body .paletteBox .palette ul li:nth-child(1) span {
+        color: #9a0002;
+        width: 0.4rem;
+        margin-left: 0.03rem;
+        display: block;
+    }
+
+    body .paletteBox .palette ul li:nth-child(2) span {
+        color: #9a0002;
+        width: 0.4rem;
+        margin-left: -0.2rem;
+    }
+
+    body .paletteBox .palette ul li:nth-child(3) span {
+        color: #9a0002;
+        width: 0.4rem;
+        margin-left: -0.2rem;
+    }
+
+    body .paletteBox .palette ul li:nth-child(4) span {
+        color: #9a0002;
+        width: 0.4rem;
+        margin-left: -0.2rem;
+    }
+
+    body .paletteBox .palette ul li:nth-child(5) span {
+        width: 0.4rem;
+        margin-left: -0.2rem;
+        color: #9a0002;
+    }
+
+    body .paletteBox .palette ul li:nth-child(6) span {
+        width: 0.4rem;
+        margin-left: -0.2rem;
+        color: #9a0002;
+    }
+
+    #showHj1, #showHj2 {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        display: none;
+    }
+
+    #showHj1 div, #showHj2 div {
+        width: 0.5rem;
+        height: 0.5rem;
+        background-color: white;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 0.5rem;
+        font-size: 0.5rem;
+        float: right;
+    }
+
+
+    #initialize {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        display: none;
+    }
+
+    #initialize div {
+        width: 1.44rem;
+        height: 0.46rem;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -0.23rem 0 0 -0.72rem;
+    }
+
+    #initialize div img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #initialize div p {
+        color: #ffffff;
+        font-size: 0.24rem;
+        margin-top: 0.3rem;
+    }
+} */
+
+
+.go_neishi {
+    width: 2.97rem;
+    height: 1.17rem;
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    margin-left: -1.485rem;
+}
+.go_neishi img {
+    width: 100%;
+    display: block;
+}
